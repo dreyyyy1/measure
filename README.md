@@ -81,7 +81,7 @@ node --test
 node src/cli.js
 ```
 
-Then open `web/index.html`.
+Then open `web/index.html`. The same file is published at https://dreyyyy1.github.io/measure/. The same file is published at https://dreyyyy1.github.io/measure/.
 
 `MEASURE_RPC` overrides the RPC URL. `MEASURE_INDEXER` overrides the indexer origin. The default indexer is `https://api.nearblocks.io`. `MEASURE_ARCHIVAL_RPC` overrides the archival URL used for the pre-TEE `state()` read. `MEASURE_PRE_TEE_BLOCK` overrides that block height.
 
