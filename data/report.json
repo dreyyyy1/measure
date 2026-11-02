@@ -1,0 +1,1157 @@
+{
+  "rpc": "https://rpc.fastnear.com",
+  "indexer": "https://api.nearblocks.io",
+  "version": "3.17.0",
+  "teeVerifier": "tee-verifier-2026-08-04.near",
+  "teeUpgradeDeadlineSeconds": 604800,
+  "epochId": 14,
+  "threshold": 11,
+  "participantCount": 16,
+  "storedTeeAccounts": 17,
+  "stateBlock": {
+    "height": 222724065,
+    "hash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy",
+    "timestampNs": "1793625556095016720"
+  },
+  "summary": "Measure compares each Chain Signatures node's stored attestation with the OS measurement v1.signer publishes. get_attestation does not return quote bytes. When the indexer still has submit_participant_info, Measure reads the quote from that transaction.",
+  "counts": {
+    "storedMatches": 16,
+    "quoteMatches": 16,
+    "quoteMissing": 0,
+    "sentence": "16 of 16 current participants have an on-chain attestation that matches the published OS measurement. 16 of 16 have a recovered quote whose MRTD and RTMR0–2 match. 0 current-participant quote reads are missing."
+  },
+  "olderEpoch": "state() at block 221156250 (2026-10-22T23:03:03.749Z, hash AyMFLkKj18uyBhK9cVCgqLPRnGknFzkJsPqgmAGzpXPu) was read from https://archival-rpc.mainnet.near.org. That time is before 2026-10-23T00:00:00Z. That keyset is epoch 14. The participant accounts are the same 16. All 4 domain public keys match this read. Resharing can keep the same public key. The same public key does not say that a share from before the TEE upgrade can take part in a current signature.",
+  "allowedMeasurements": [
+    {
+      "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+      "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+      "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+      "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+      "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+    }
+  ],
+  "domains": [
+    {
+      "id": 0,
+      "protocol": "CaitSith",
+      "purpose": "Sign",
+      "threshold": 11,
+      "attempt": 0,
+      "publicKey": "secp256k1:3tFRbMqmoa6AAALMrEFAYCEoHcqKxeW38YptwowBVBtXK1vo36HDbUWuR6EZmoK4JcH6HDkNMGGqP1ouV7VZUWya"
+    },
+    {
+      "id": 1,
+      "protocol": "Frost",
+      "purpose": "Sign",
+      "threshold": 11,
+      "attempt": 19,
+      "publicKey": "ed25519:G9hwngxWNKdmqMCmU1Yt6LPhFpayJeKFxyAV1HqMNLtF"
+    },
+    {
+      "id": 2,
+      "protocol": "ConfidentialKeyDerivation",
+      "purpose": "CKD",
+      "threshold": 11,
+      "attempt": 0,
+      "publicKey": "bls12381g2:24mhN4RnB2CbiUkAfukyh4s1CT6dUNd9Pc8kRnL4LvAP3tcxhUupbphmfbmwHSi66aFCiZkMgiH2KqXWJLD7JUeAFhoLS3WQbzWcpUzhERLqxyocwT9Xrd4WNvEuKavxmXdR"
+    },
+    {
+      "id": 3,
+      "protocol": "CaitSith",
+      "purpose": "ForeignTx",
+      "threshold": 11,
+      "attempt": 0,
+      "publicKey": "secp256k1:29UZSakxpCKVJaJYUmR5UtqdP16xcSemPudWXGEZCxs5HemWkXb331X3o8fqLCZtSj9sdes33YQJNa9D1wEBd9ac"
+    }
+  ],
+  "calls": [
+    {
+      "method": "version",
+      "blockHeight": 222724064,
+      "blockHash": "C1r2cG4Kv1X9LXQBpyNgEoiWGyhg8SzrxNB8WJjMQmqr"
+    },
+    {
+      "method": "config",
+      "blockHeight": 222724065,
+      "blockHash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy"
+    },
+    {
+      "method": "state",
+      "blockHeight": 222724065,
+      "blockHash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy"
+    },
+    {
+      "method": "allowed_os_measurements",
+      "blockHeight": 222724065,
+      "blockHash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy"
+    },
+    {
+      "method": "allowed_docker_image_hashes",
+      "blockHeight": 222724066,
+      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+    },
+    {
+      "method": "allowed_launcher_compose_hashes",
+      "blockHeight": 222724066,
+      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+    },
+    {
+      "method": "get_tee_accounts",
+      "blockHeight": 222724066,
+      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+    },
+    {
+      "method": "tee_verifier_account_id",
+      "blockHeight": 222724066,
+      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+    }
+  ],
+  "rows": [
+    {
+      "accountId": "mpc-lgns.near",
+      "participantId": 4,
+      "url": "http://137.74.108.92:80",
+      "tlsPublicKey": "ed25519:6xY2u5RHiBM5sdNnojwMjqKEBgFLmMesnyPovmSXqFFp",
+      "accountPublicKey": "ed25519:6u7h8yLGDAmiUFNT42oQmJLdKoksRC1eDrc55PUxqiHx",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
+        "expiryTimestampSeconds": 1794229338,
+        "acceptedAtSeconds": 1793624538
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "13945015a45b384988f66f0bcf6b87bf5532956331d112392ce0dc1e27e21e42ebfda840108a71e780900807e09d7619"
+      },
+      "submissionTx": "4awkkK3hptY52Q1cSHXSHQAbJGvAGj6drPoqJayFqWV3",
+      "attestationBlockHeight": 222724066,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "multichain-mainnet-aurora.near",
+      "participantId": 5,
+      "url": "http://multichain-mainnet.aurora.dev:80",
+      "tlsPublicKey": "ed25519:8eUhDQoWTTiqLjxAViAHXPK6VnT97YkjgFz7Hf2PQbfz",
+      "accountPublicKey": "ed25519:BwScwquNZHrh566j4YHUdMRixP4D5CsLTa2RWAUf7JNi",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
+        "expiryTimestampSeconds": 1794227390,
+        "acceptedAtSeconds": 1793622590
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "61e7ca6c34ab420994d8fd2c079892ca1c30926e0145d320b117c4b4c51f742793258f600817a4a957a975ddee0b39e6"
+      },
+      "submissionTx": "5UJLW66RAiv3oGRRmrB4z5MZkTXUjapND9zRq3CKAwkp",
+      "attestationBlockHeight": 222724069,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "near-mpc-staking4all-01.near",
+      "participantId": 6,
+      "url": "http://multichain-mainnet-01.staking4all.org:80",
+      "tlsPublicKey": "ed25519:6Jo3Q1qyjDy2b7r8eqKasckk5qfsnLfxKUS3FfS9R9MM",
+      "accountPublicKey": "ed25519:5WZpSFVA3rPgqs6F66pzbsGPUuuExBBtaQVKNqduSnnU",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
+        "expiryTimestampSeconds": 1794228093,
+        "acceptedAtSeconds": 1793623293
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "497c980f4e7240b8ac071d99495b9775ca2aa93a5c6db21f7fb67126e1e5b5b88655e154345cefaa375977b2bb3fa83a"
+      },
+      "submissionTx": "9YQcDcMfGKqx9Xwxsym1sv1QD9MZ6VUrXBxNs2T4HMBm",
+      "attestationBlockHeight": 222724067,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "nodemonster.near",
+      "participantId": 7,
+      "url": "http://near-mpc-main.node.monster:80",
+      "tlsPublicKey": "ed25519:3nGFcBkefJVEgLqq7ScxRrcdxnVNSMRWqJokkRnb1AzW",
+      "accountPublicKey": "ed25519:2zaHA3rth2wRwXTTnrRYooCFMNfR41nKvUvshVoeTZP9",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "e165dc6727e029fb42c7af54e0c15c849df903302679b661db5ee492a8a949cf",
+        "expiryTimestampSeconds": 1794227327,
+        "acceptedAtSeconds": 1793622527
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "dc27e00ca3d5db2c392adeac8d3eafa2546df51fdd3843614caa08622b38660598806b10fcbf17c5c57d34bcd657c0d3"
+      },
+      "submissionTx": "AoBHRtmhtpCeUMP9b6qHGtj1Ed21NesWoK7tXgvm8yxY",
+      "attestationBlockHeight": 222724072,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "n1-multichain.near",
+      "participantId": 8,
+      "url": "https://57.129.86.53:80",
+      "tlsPublicKey": "ed25519:DA6z3Gza1fmo3wTxiV4B1Lnv6nMkS38fJuKPbBvKWSct",
+      "accountPublicKey": "ed25519:6qxdfaxVUhus17PYu6EAC85af5fxaMDnVQAu7RS2Afr8",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "5676f96aef7b128f07acb69b05e2a80ad602c2c881ac719984f705dfce17f22f",
+        "expiryTimestampSeconds": 1794229631,
+        "acceptedAtSeconds": 1793624831
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "58346915d8e56cc1f799448a6c896a80e84a5db43cbd2c201cf0bc0426c9c621e030d1bbe48684725355c696d39dfda5"
+      },
+      "submissionTx": "AT7zL8a5Bo8Sf8agRXEyYhhtJYqBeZWGfesdKtwwVw1b",
+      "attestationBlockHeight": 222724072,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "everstake-mpc-1.near",
+      "participantId": 10,
+      "url": "http://nearmpc-mainnet-tdx.everstake.com:80",
+      "tlsPublicKey": "ed25519:2DkhuDvZrBWEYKjhKx9nekXNHkyeZxS2S3U5rHtHv2ca",
+      "accountPublicKey": "ed25519:Cs8HhenpAYqH2D3TkiZNgjZHD9Ys3GM87m92W8vQqvQi",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "6b4af0807cb0cb99804dbe6b0923d421089ef51dd82f4f558e662a4ab1d1e69f",
+        "expiryTimestampSeconds": 1794229999,
+        "acceptedAtSeconds": 1793625199
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "d139c87b8a379b21d3c13b7fa60d0168fdbb69c70d0667660537b871c81b5eb49b1159d5bd5ea87e62742961b9174b91"
+      },
+      "submissionTx": "CtXL8pRWKV2buizdkz17UF2gUFckBvuPj7ShQMVaEvgp",
+      "attestationBlockHeight": 222724070,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "stakin-mpc.near",
+      "participantId": 11,
+      "url": "http://near-mpc-mainnet-1.stakin-nodes.com:80",
+      "tlsPublicKey": "ed25519:Fsofv4hmTbbxdBk9eQmM9aSX3xWgbzmKRyZjjxJE5ocF",
+      "accountPublicKey": "ed25519:GJamGnKkYrWCNpHwSYJj6iRcK7HpzH67kqGAswXYatzu",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
+        "expiryTimestampSeconds": 1794229225,
+        "acceptedAtSeconds": 1793624425
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "13945015a45b384988f66f0bcf6b87bf5532956331d112392ce0dc1e27e21e42ebfda840108a71e780900807e09d7619"
+      },
+      "submissionTx": "BmLnUL4m5b3DxSM2CGmcxy9mnreGJRBv8zWaz52PbbUb",
+      "attestationBlockHeight": 222724067,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "mpch-01.near",
+      "participantId": 12,
+      "url": "http://mpch-mpc-near-m-01.near.mainnet.mpch.io",
+      "tlsPublicKey": "ed25519:nBTkCdyi3GQ9oqM8YsViRiiindkrv6f9yh9TX1HhDN6",
+      "accountPublicKey": "ed25519:38EvBLV9uCQJ6RjVEcn2hnAPUbdqAGJyucSXbzmBHFBH",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
+        "expiryTimestampSeconds": 1794230166,
+        "acceptedAtSeconds": 1793625366
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "3a9d4024689cc6380c5780e4569b32773f8e78ff7319a32bb8291cde8f9c041091befcded04f8a0dcc94c74432e7f886"
+      },
+      "submissionTx": "4FFxAuiPpriSPicnJ2oFQpjnSdtwkYkrH1KpdjMBw85d",
+      "attestationBlockHeight": 222724071,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "svrn-01.near",
+      "participantId": 13,
+      "url": "http://svrn-mpc-near-m-01.near.mainnet.ssgllc.io",
+      "tlsPublicKey": "ed25519:FVAvAVSnPYB18TvapgBDbQyAdm5XrTcSjQoohe8pJa7Y",
+      "accountPublicKey": "ed25519:GdrMw9r1TSEQunU3XiCfH8JJ4LWueLWZe8QvtUbPfPnh",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
+        "expiryTimestampSeconds": 1794229331,
+        "acceptedAtSeconds": 1793624531
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "3a9d4024689cc6380c5780e4569b32773f8e78ff7319a32bb8291cde8f9c041091befcded04f8a0dcc94c74432e7f886"
+      },
+      "submissionTx": "8kQuS5VeEg3aDJek7AG2F9QGRuu3Y4gqybZWGWRi9Vhi",
+      "attestationBlockHeight": 222724069,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
+        "acceptance": {
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
+          "advisoryIds": [],
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793624531
+        },
+        "now": {
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
+          "advisoryIds": [],
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628122
+        }
+      }
+    },
+    {
+      "accountId": "greenfield-mpc01.near",
+      "participantId": 14,
+      "url": "http://near-mpc-mainnet2.greenfield.xyz:80",
+      "tlsPublicKey": "ed25519:3RWgtpdVjuoRZsf3S73ipwVMRiYML37bLHKbokkWeGPq",
+      "accountPublicKey": "ed25519:2PdhtMKP7GQzqKX2DXLi53R7nJGsZny6waBcf392rxqK",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "d0554295b162cd77ec5cbbfc729d4787a469588ceca0ea617ef8f2cb6a67407a",
+        "expiryTimestampSeconds": 1794230309,
+        "acceptedAtSeconds": 1793625509
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "e33c71916561029a588f422d0a7d6bae1e7722d0db0f74e10eeb0bf8ec0b8a23535b798bc7d61048f3943cf88c10a880"
+      },
+      "submissionTx": "9hkZoV3gT48hNthSHFAidyJ35V65gGECG1aDUpLySVUF",
+      "attestationBlockHeight": 222724072,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "natsai-mpc.near",
+      "participantId": 15,
+      "url": "http://near-mpc-mainnet-1.natsai.xyz:80",
+      "tlsPublicKey": "ed25519:8Kwvcxvx3fjtAizVjMVMLBeQJHWCBJY7a9bjAMb4aiHd",
+      "accountPublicKey": "ed25519:EBVzDPpx1mYG4K7D29erANMiqGRQRgHDgBwxn8syX8yA",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "52ac6180435b47e17a0e99face12e2e54acbc73ad3297bda9e38f7706fe9d75e",
+        "expiryTimestampSeconds": 1794228540,
+        "acceptedAtSeconds": 1793623740
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "99e2210e43c88c4e38c367bd8508d4ce8d48c2f17cbe31924ced515984ac1e3e51148cb66d005ea02ee1ab83c2860d53"
+      },
+      "submissionTx": "8TYP8xkGhegYB3swiQXcL189g2AWoNEH3N2Edokn3kqC",
+      "attestationBlockHeight": 222724072,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "hashkeympc.near",
+      "participantId": 16,
+      "url": "http://near-mpc-mainnet-1.hashkey.cloud",
+      "tlsPublicKey": "ed25519:EUB6coGTMVia2rdjDB9Q18yVn4iu38fgVbHberzKC847",
+      "accountPublicKey": "ed25519:CqPdKWDBsYHtVYbqqUpe7sqwADbkxf6dLqBaZjnFu6HP",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "16477fc809423efbabbdd69bbbd41942481819e3b89e5a8db036d8f72434ed16",
+        "expiryTimestampSeconds": 1794227261,
+        "acceptedAtSeconds": 1793622461
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "457898c44c5b8055df94b6cf3454f618c1c348551a8db74f135c6fef1274deae0a355444552e8ffcbb74bd7085574ccd"
+      },
+      "submissionTx": "9rWUux2T1wkGZhGYgdatmQj8A7Y8oM2ceue6GrDgwNhR",
+      "attestationBlockHeight": 222724071,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "astrostakers-mainnet.near",
+      "participantId": 17,
+      "url": "http://near-mainnet-mpc.astrostakers.com",
+      "tlsPublicKey": "ed25519:Fmv82fr5ALKs597ohcZMi7QXMrfQ3rDELVG231qDF4ME",
+      "accountPublicKey": "ed25519:3WaocV9ryokGemNAdmcQbnu5nmm62sscj13vc4rnnsLu",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "2e70dd7670adcc9a837410719f397f560a78eb1b12e5bc042b9df73209359049",
+        "expiryTimestampSeconds": 1794229046,
+        "acceptedAtSeconds": 1793624246
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "afab35aac134aaa25b2d87df60dc744970f6d44bb1d7c0fad878dcd9910feb61ba98fd1b59357e7bcbdb65bebe1c9233"
+      },
+      "submissionTx": "4Ak3WV4vQ9LfHGh7HGZmuf8kEH6VLU7EagKnHp1LxWFN",
+      "attestationBlockHeight": 222724068,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "klever-nearmpc-01.near",
+      "participantId": 18,
+      "url": "http://multichain-mainnet-01.klever.io",
+      "tlsPublicKey": "ed25519:KfQywkbYRBwBR2sypA9uHqFNWqywNZUCNdw1zFmjnMh",
+      "accountPublicKey": "ed25519:2D5SEEd2TaFBPxwZc6QyJZaxRWN1Yf7uZwgFpPwN8am8",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "2e70dd7670adcc9a837410719f397f560a78eb1b12e5bc042b9df73209359049",
+        "expiryTimestampSeconds": 1794228408,
+        "acceptedAtSeconds": 1793623608
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "3b703b7a2b10a41adefc73466f81cb91ca582787bc927d516255d69608b0127ca2bb74e398b87079089368c96d5bed2b"
+      },
+      "submissionTx": "BaaCyaaae8PFgGdxUVtBMLxhcpsY4GUEpbQwq3K4ZSnu",
+      "attestationBlockHeight": 222724068,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "nansen-ai-mpc.near",
+      "participantId": 19,
+      "url": "http://mpc.near.staking.nansen.ai",
+      "tlsPublicKey": "ed25519:E59NQmrXbWNrKcrg5Fhxwa73FFyjRWquLsNTzakHD5aU",
+      "accountPublicKey": "ed25519:954gwT3w4Ba83P4boJy8aCh3AVCapyTLTUXoXBG4SwZg",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "2e70dd7670adcc9a837410719f397f560a78eb1b12e5bc042b9df73209359049",
+        "expiryTimestampSeconds": 1794227969,
+        "acceptedAtSeconds": 1793623169
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "3b703b7a2b10a41adefc73466f81cb91ca582787bc927d516255d69608b0127ca2bb74e398b87079089368c96d5bed2b"
+      },
+      "submissionTx": "8aMfyn37RpNpJxSr5Uc8hy9ZRawPSqF6S7dh28M5DoXJ",
+      "attestationBlockHeight": 222724072,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "bitwise-mpc01.near",
+      "participantId": 20,
+      "url": "http://near-mpc-mainnet01.mainnet.validators.bitwiseinvestments.com",
+      "tlsPublicKey": "ed25519:3R2RE7XSQepvkbbvkvpJ3iWGXgY6Ztpj1T3eguovMXZT",
+      "accountPublicKey": "ed25519:FAJ6YY5gmKG6bC3K8j2CzWiREZZHrWxEodBbtm9bAyPT",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
+        "launcherComposeHash": "2e70dd7670adcc9a837410719f397f560a78eb1b12e5bc042b9df73209359049",
+        "expiryTimestampSeconds": 1794230297,
+        "acceptedAtSeconds": 1793625497
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": null
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "afab35aac134aaa25b2d87df60dc744970f6d44bb1d7c0fad878dcd9910feb61ba98fd1b59357e7bcbdb65bebe1c9233"
+      },
+      "submissionTx": "7CgQSwFJUfRkayXaBjS61n5gaKG8ywh2Shg1QRvSh67q",
+      "attestationBlockHeight": 222724072,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    },
+    {
+      "accountId": "blacksandtech.near",
+      "participantId": null,
+      "url": null,
+      "tlsPublicKey": "ed25519:6biR7HfytnWcjyrnE1eVFDKXxo5huz11uwxyMxKWPdvT",
+      "accountPublicKey": "ed25519:6fjsasP13zhmwHv7xkB65bHiG4Lvn5TfMbJqCXkWCyNy",
+      "stored": {
+        "status": "matches",
+        "reason": "five stored fields equal one allowed_os_measurements entry",
+        "measurements": {
+          "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+          "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+          "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+          "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+          "key_provider_event_digest": "61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8"
+        },
+        "mpcImageHash": "4572d8de226e20870d6961a1e0f364cd77817d4cf53fdba8001f56c75695089d",
+        "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
+        "expiryTimestampSeconds": 1794228072,
+        "acceptedAtSeconds": 1793623272
+      },
+      "image": {
+        "status": "matches",
+        "expiryTimestampSeconds": 1793970889
+      },
+      "compose": {
+        "status": "matches"
+      },
+      "quote": {
+        "status": "matches",
+        "binding": "binds this node's keys",
+        "reason": "quote MRTD and RTMR0–2 equal one allowed_os_measurements entry",
+        "mrtd": "f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077",
+        "rtmr0": "e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46",
+        "rtmr1": "b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f",
+        "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
+        "rtmr3": "ad73e11b1ca5739c5e3fa805a7ba7a15941e973856d54371a7a7f089f2c9ddd01d9e38b939f86db0166544802e7a44ba"
+      },
+      "submissionTx": "dT8gv5fTnwPQQYe6C5BgC1hqEiT4MLTQCsFdnNw6FwM",
+      "attestationBlockHeight": 222724068,
+      "signature": {
+        "library": "@phala/dcap-qvl",
+        "libraryVersion": "0.7.0",
+        "collateralSource": null,
+        "root": null,
+        "acceptance": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        },
+        "now": {
+          "status": "signature not checked",
+          "tcbStatus": null,
+          "advisoryIds": [],
+          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
+          "checkedAtSeconds": null
+        }
+      }
+    }
+  ],
+  "intel": {
+    "library": "@phala/dcap-qvl",
+    "libraryVersion": "0.7.0",
+    "root": "Intel production root",
+    "collateralSource": "on-chain collateral",
+    "checkedRows": [
+      "svrn-01.near"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "measure",
+  "private": true,
+  "type": "module",
+  "description": "Read NEAR Chain Signatures signer attestations and compare them to the measurements v1.signer publishes.",
+  "scripts": {
+    "test": "node --test",
+    "read": "node src/cli.js"
+  },
+  "dependencies": {
+    "@phala/dcap-qvl": "0.7.0"
+  }
+}

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Measure</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f7f4ee; color: #1a1814; font: 16px/1.45 "Segoe UI", sans-serif; }
+    main { max-width: 1180px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font: 48px/1 "Iowan Old Style", Palatino, Georgia, serif; margin: 0 0 12px; }
+    h2 { font: 22px/1.2 "Iowan Old Style", Palatino, Georgia, serif; margin: 36px 0 8px; }
+    p, li { max-width: 78ch; }
+    .kicker { letter-spacing: 0.04em; text-transform: uppercase; font-size: 12px; margin: 0; }
+    table { width: 100%; border-collapse: collapse; background: #fffdf8; margin-top: 12px; }
+    th, td { border-bottom: 1px solid #ddd6c8; text-align: left; vertical-align: top; padding: 8px; font-size: 14px; }
+    th { font-size: 12px; letter-spacing: 0.03em; text-transform: uppercase; }
+    code { font-family: Consolas, monospace; font-size: 12px; overflow-wrap: anywhere; }
+    .sub { color: #5c564c; font-size: 12px; margin-top: 4px; }
+    td.match { color: #1a1814; }
+    td.bad { background: #f3e4e1; }
+    td.gap { background: #eeeae2; }
+    .count { font-size: 18px; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="kicker">NEAR Chain Signatures · v1.signer</p>
+  <h1>Measure</h1>
+  <p>Measure compares each Chain Signatures node&#39;s stored attestation with the OS measurement v1.signer publishes. get_attestation does not return quote bytes. When the indexer still has submit_participant_info, Measure reads the quote from that transaction.</p>
+  <p class="count">16 of 16 current participants have an on-chain attestation that matches the published OS measurement. 16 of 16 have a recovered quote whose MRTD and RTMR0–2 match. 0 current-participant quote reads are missing.</p>
+
+  <h2>This read</h2>
+  <p>Contract <code>v1.signer</code> version <code>3.17.0</code>. TEE verifier <code>tee-verifier-2026-08-04.near</code>. RPC <code>https://rpc.fastnear.com</code>. State block <code>222724065</code> at 2026-11-02T13:19:16.095Z, hash <code>2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy</code>.</p>
+  <p>Key epoch <code>14</code> from <code>state().keyset.epoch_id</code>. Current participants <code>16</code>. Signature threshold <code>11</code>. Attestation storage window <code>604800</code> seconds, from <code>config().tee_upgrade_deadline_duration_seconds</code>.</p>
+
+  <h2>Signers</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Account</th>
+        <th>On-chain attestation</th>
+        <th>Quote MRTD, RTMR0–2</th>
+        <th>Quote reportData</th>
+        <th>Image hash</th>
+        <th>Compose hash</th>
+        <th>Intel signature</th>
+        <th>Accepted</th>
+        <th>Quote transaction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>mpc-lgns.near</code><div class="sub">participant 4</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">f99d6a7958fd</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T13:02:18Z<div class="sub">expires 2026-11-09T13:02:18Z</div></td>
+        <td><code>4awkkK3hptY52Q1cSHXSHQAbJGvAGj6drPoqJayFqWV3</code></td>
+      </tr>
+<tr>
+        <td><code>multichain-mainnet-aurora.near</code><div class="sub">participant 5</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">f99d6a7958fd</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:29:50Z<div class="sub">expires 2026-11-09T12:29:50Z</div></td>
+        <td><code>5UJLW66RAiv3oGRRmrB4z5MZkTXUjapND9zRq3CKAwkp</code></td>
+      </tr>
+<tr>
+        <td><code>near-mpc-staking4all-01.near</code><div class="sub">participant 6</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">f99d6a7958fd</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:41:33Z<div class="sub">expires 2026-11-09T12:41:33Z</div></td>
+        <td><code>9YQcDcMfGKqx9Xwxsym1sv1QD9MZ6VUrXBxNs2T4HMBm</code></td>
+      </tr>
+<tr>
+        <td><code>nodemonster.near</code><div class="sub">participant 7</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">e165dc6727e0</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:28:47Z<div class="sub">expires 2026-11-09T12:28:47Z</div></td>
+        <td><code>AoBHRtmhtpCeUMP9b6qHGtj1Ed21NesWoK7tXgvm8yxY</code></td>
+      </tr>
+<tr>
+        <td><code>n1-multichain.near</code><div class="sub">participant 8</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">5676f96aef7b</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T13:07:11Z<div class="sub">expires 2026-11-09T13:07:11Z</div></td>
+        <td><code>AT7zL8a5Bo8Sf8agRXEyYhhtJYqBeZWGfesdKtwwVw1b</code></td>
+      </tr>
+<tr>
+        <td><code>everstake-mpc-1.near</code><div class="sub">participant 10</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">6b4af0807cb0</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T13:13:19Z<div class="sub">expires 2026-11-09T13:13:19Z</div></td>
+        <td><code>CtXL8pRWKV2buizdkz17UF2gUFckBvuPj7ShQMVaEvgp</code></td>
+      </tr>
+<tr>
+        <td><code>stakin-mpc.near</code><div class="sub">participant 11</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">f99d6a7958fd</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T13:00:25Z<div class="sub">expires 2026-11-09T13:00:25Z</div></td>
+        <td><code>BmLnUL4m5b3DxSM2CGmcxy9mnreGJRBv8zWaz52PbbUb</code></td>
+      </tr>
+<tr>
+        <td><code>mpch-01.near</code><div class="sub">participant 12</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">f99d6a7958fd</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T13:16:06Z<div class="sub">expires 2026-11-09T13:16:06Z</div></td>
+        <td><code>4FFxAuiPpriSPicnJ2oFQpjnSdtwkYkrH1KpdjMBw85d</code></td>
+      </tr>
+<tr>
+        <td><code>svrn-01.near</code><div class="sub">participant 13</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">f99d6a7958fd</div></td>
+        <td class="match">signature checked at acceptance 2026-11-02T13:02:11Z. TCB UpToDate<br>signature checked at the current check 2026-11-02T14:02:02Z. TCB UpToDate<div class="sub">on-chain collateral. Intel production root. @phala/dcap-qvl 0.7.0</div></td>
+        <td>2026-11-02T13:02:11Z<div class="sub">expires 2026-11-09T13:02:11Z</div></td>
+        <td><code>8kQuS5VeEg3aDJek7AG2F9QGRuu3Y4gqybZWGWRi9Vhi</code></td>
+      </tr>
+<tr>
+        <td><code>greenfield-mpc01.near</code><div class="sub">participant 14</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">d0554295b162</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T13:18:29Z<div class="sub">expires 2026-11-09T13:18:29Z</div></td>
+        <td><code>9hkZoV3gT48hNthSHFAidyJ35V65gGECG1aDUpLySVUF</code></td>
+      </tr>
+<tr>
+        <td><code>natsai-mpc.near</code><div class="sub">participant 15</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">52ac6180435b</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:49:00Z<div class="sub">expires 2026-11-09T12:49:00Z</div></td>
+        <td><code>8TYP8xkGhegYB3swiQXcL189g2AWoNEH3N2Edokn3kqC</code></td>
+      </tr>
+<tr>
+        <td><code>hashkeympc.near</code><div class="sub">participant 16</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">16477fc80942</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:27:41Z<div class="sub">expires 2026-11-09T12:27:41Z</div></td>
+        <td><code>9rWUux2T1wkGZhGYgdatmQj8A7Y8oM2ceue6GrDgwNhR</code></td>
+      </tr>
+<tr>
+        <td><code>astrostakers-mainnet.near</code><div class="sub">participant 17</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">2e70dd7670ad</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:57:26Z<div class="sub">expires 2026-11-09T12:57:26Z</div></td>
+        <td><code>4Ak3WV4vQ9LfHGh7HGZmuf8kEH6VLU7EagKnHp1LxWFN</code></td>
+      </tr>
+<tr>
+        <td><code>klever-nearmpc-01.near</code><div class="sub">participant 18</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">2e70dd7670ad</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:46:48Z<div class="sub">expires 2026-11-09T12:46:48Z</div></td>
+        <td><code>BaaCyaaae8PFgGdxUVtBMLxhcpsY4GUEpbQwq3K4ZSnu</code></td>
+      </tr>
+<tr>
+        <td><code>nansen-ai-mpc.near</code><div class="sub">participant 19</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">2e70dd7670ad</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:39:29Z<div class="sub">expires 2026-11-09T12:39:29Z</div></td>
+        <td><code>8aMfyn37RpNpJxSr5Uc8hy9ZRawPSqF6S7dh28M5DoXJ</code></td>
+      </tr>
+<tr>
+        <td><code>bitwise-mpc01.near</code><div class="sub">participant 20</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">536d528f19cf · allowlist expiry none</div></td>
+        <td class="match">matches<div class="sub">2e70dd7670ad</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T13:18:17Z<div class="sub">expires 2026-11-09T13:18:17Z</div></td>
+        <td><code>7CgQSwFJUfRkayXaBjS61n5gaKG8ywh2Shg1QRvSh67q</code></td>
+      </tr>
+<tr>
+        <td><code>blacksandtech.near</code><div class="sub">stored, not a current participant</div></td>
+        <td class="match">matches<div class="sub">five stored fields equal one allowed_os_measurements entry</div></td>
+        <td class="match">matches<div class="sub">quote MRTD and RTMR0–2 equal one allowed_os_measurements entry</div></td>
+        <td>binds this node&#39;s keys</td>
+        <td class="match">matches<div class="sub">4572d8de226e · allowlist expiry 2026-11-06T13:14:49Z</div></td>
+        <td class="match">matches<div class="sub">f99d6a7958fd</div></td>
+        <td class="gap">signature not checked<div class="sub">this snapshot did not pass this quote and collateral to the Intel check</div></td>
+        <td>2026-11-02T12:41:12Z<div class="sub">expires 2026-11-09T12:41:12Z</div></td>
+        <td><code>dT8gv5fTnwPQQYe6C5BgC1hqEiT4MLTQCsFdnNw6FwM</code></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Current participants use 1 image hash and 8 launcher compose hashes. 16 of 16 compose hashes are on the allowlist. 1 stored account outside the participant set has an allowlist expiry.</p>
+  <p>On-chain attestation compares the five fields stored by <code>get_attestation</code> with <code>allowed_os_measurements</code>. The quote column compares only MRTD and RTMR0–2, because the quote body has no key-provider digest. <code>get_attestation</code> does not return quote bytes. Quote bytes are taken from <code>submit_participant_info</code> arguments on the indexer.</p>
+  <p>1 of 17 rows were passed to the Intel signature check and the check returned a report. 0 of 17 failed that check. 16 of 17 say signature not checked.</p>
+
+  <h2>Key epoch</h2>
+  <p>The shares named by this read belong to key epoch 14. state() at block 221156250 (2026-10-22T23:03:03.749Z, hash AyMFLkKj18uyBhK9cVCgqLPRnGknFzkJsPqgmAGzpXPu) was read from https://archival-rpc.mainnet.near.org. That time is before 2026-10-23T00:00:00Z. That keyset is epoch 14. The participant accounts are the same 16. All 4 domain public keys match this read. Resharing can keep the same public key. The same public key does not say that a share from before the TEE upgrade can take part in a current signature.</p>
+  <ul>
+    <li>domain 0 CaitSith Sign, threshold 11, attempt 0, key <code>secp256k1:3tFRbMqmoa6AAALMrEFAYCEoHcqKxeW38YptwowBVBtXK1vo36HDbUWuR6EZmoK4JcH6HDkNMGGqP1ouV7VZUWya</code></li>
+<li>domain 1 Frost Sign, threshold 11, attempt 19, key <code>ed25519:G9hwngxWNKdmqMCmU1Yt6LPhFpayJeKFxyAV1HqMNLtF</code></li>
+<li>domain 2 ConfidentialKeyDerivation CKD, threshold 11, attempt 0, key <code>bls12381g2:24mhN4RnB2CbiUkAfukyh4s1CT6dUNd9Pc8kRnL4LvAP3tcxhUupbphmfbmwHSi66aFCiZkMgiH2KqXWJLD7JUeAFhoLS3WQbzWcpUzhERLqxyocwT9Xrd4WNvEuKavxmXdR</code></li>
+<li>domain 3 CaitSith ForeignTx, threshold 11, attempt 0, key <code>secp256k1:29UZSakxpCKVJaJYUmR5UtqdP16xcSemPudWXGEZCxs5HemWkXb331X3o8fqLCZtSj9sdes33YQJNa9D1wEBd9ac</code></li>
+  </ul>
+
+  <h2>Published OS measurements</h2>
+  <ul>
+    <li><code>mrtd</code> f06dfda6dce1cf904d4e2bab1dc370634cf95cefa2ceb2de2eee127c9382698090d7a4a13e14c536ec6c9c3c8fa87077<br><code>rtmr0</code> e673be2f70beefb70b48a6109eed4715d7270d4683b3bf356fa25fafbf1aa76e39e9127e6e688ccda98bdab1d4d47f46<br><code>rtmr1</code> b598fde9491427341bc4683b75d10d3e36770af3a36a6954d8b6b7b22aa66358f13e1f172e51b7d6e6710d99a8d8532f<br><code>rtmr2</code> 9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf<br><code>key_provider_event_digest</code> 61ce56b6be756a9e45af7715b13c15040a4e6090cc740be24e2cc02e33b4fb53ae4e3c945c9af83e2a26c6d5efa414a8</li>
+  </ul>
+
+  <h2>Where each number was read</h2>
+  <table>
+    <thead><tr><th>Method on v1.signer</th><th>Block</th><th>Block hash</th></tr></thead>
+    <tbody>
+      <tr><td><code>version</code></td><td>222724064</td><td><code>C1r2cG4Kv1X9LXQBpyNgEoiWGyhg8SzrxNB8WJjMQmqr</code></td></tr>
+<tr><td><code>config</code></td><td>222724065</td><td><code>2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy</code></td></tr>
+<tr><td><code>state</code></td><td>222724065</td><td><code>2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy</code></td></tr>
+<tr><td><code>allowed_os_measurements</code></td><td>222724065</td><td><code>2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy</code></td></tr>
+<tr><td><code>allowed_docker_image_hashes</code></td><td>222724066</td><td><code>847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz</code></td></tr>
+<tr><td><code>allowed_launcher_compose_hashes</code></td><td>222724066</td><td><code>847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz</code></td></tr>
+<tr><td><code>get_tee_accounts</code></td><td>222724066</td><td><code>847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz</code></td></tr>
+<tr><td><code>tee_verifier_account_id</code></td><td>222724066</td><td><code>847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz</code></td></tr>
+    </tbody>
+  </table>
+  <p>Indexer for quote transactions: <code>https://api.nearblocks.io</code>, account transaction list, method <code>submit_participant_info</code>.</p>
+
+  <h2>Limits of this read</h2>
+  <ul>
+    <li>Intel's signature is checked only on a row that names a TCB status. Other rows say signature not checked. A measurement match does not check the signature.</li>
+    <li>The key-provider event log is not replayed. That digest is compared only as stored.</li>
+    <li>RTMR3 is parsed from the quote and is not an allowlist field.</li>
+    <li>state() at block 221156250 (2026-10-22T23:03:03.749Z, hash AyMFLkKj18uyBhK9cVCgqLPRnGknFzkJsPqgmAGzpXPu) was read from https://archival-rpc.mainnet.near.org. That time is before 2026-10-23T00:00:00Z. That keyset is epoch 14. The participant accounts are the same 16. All 4 domain public keys match this read. Resharing can keep the same public key. The same public key does not say that a share from before the TEE upgrade can take part in a current signature.</li>
+  </ul>
+  <p>Read-only. Measure does not sign, spend, or hold a key.</p>
+</main>
+</body>
+</html>
