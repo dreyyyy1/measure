@@ -30,7 +30,7 @@ The key-provider event log is not replayed.
 - RPC: `https://rpc.fastnear.com`
 - Contract version: `3.17.0`, from `version()`
 - TEE verifier: `tee-verifier-2026-08-04.near`, from `tee_verifier_account_id()`
-- State block: `222724065`, hash `2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy`
+- State block: `222729388`, hash `8KaNc6DYGMuNmRkLsYFGmWfyd4ngFZNCTvjP7LU9pu4T`, time `2026-11-02T14:11:24.544Z`
 - Key epoch: `14`, from `state().keyset.epoch_id`
 - Current participants: 16. Threshold: 11. Stored TEE accounts: 17
 - Published OS measurement sets: 1
@@ -38,10 +38,28 @@ The key-provider event log is not replayed.
 - 16 of 16 current participants: a recovered quote matches on MRTD and RTMR0–2, and its reportData binds that node's keys
 - Current participants use 1 image hash and 8 launcher compose hashes. All 16 compose hashes are on the allowlist
 - `blacksandtech.near` has a stored attestation and is not in the current participant set. Its image hash is the allowlist entry whose expiry is set. The current participants' image hash has no expiry
-- Intel signature, one row: `svrn-01.near`, transaction `8kQuS5VeEg3aDJek7AG2F9QGRuu3Y4gqybZWGWRi9Vhi`. Collateral source: the collateral submitted in that transaction. Root: Intel production root, via `@phala/dcap-qvl` 0.7.0 `QuoteVerifier.newProd()`. A fresh Intel PCS or Phala PCCS fetch was not used
-- At acceptance, `get_attestation` `accepted_at_seconds` `1793624531` (`2026-11-02T13:02:11Z`): signature checked, certificate chain checked, TCB `UpToDate`, advisory IDs none
-- At the current check, unix `1793628122` (`2026-11-02T14:02:02Z`): signature checked, certificate chain checked, TCB `UpToDate`, advisory IDs none
-- The other 16 rows say signature not checked. This snapshot did not pass their quotes to `verify()`
+- Intel signature, 17 of 17 rows, including `blacksandtech.near`. Each check used the collateral submitted in that row's `submit_participant_info` transaction. Root: Intel production root, via `@phala/dcap-qvl` 0.7.0 `QuoteVerifier.newProd()`. `verify()` returned a report at that row's `accepted_at_seconds` and at that row's current check. Both times the TCB status was `UpToDate` and the advisory ID list was empty. A fresh Intel PCS or Phala PCCS fetch was not used. The current checks ran from `2026-11-02T14:13:08Z` through `2026-11-02T14:14:36Z`
+- `svrn-01.near` in this snapshot is transaction `DsxtNkhMo2SECDXusjvJtnotKHAgegAi83W1GfN6aggN`. The fixture test still uses the earlier transaction `8kQuS5VeEg3aDJek7AG2F9QGRuu3Y4gqybZWGWRi9Vhi`
+
+| Account | Quote transaction | Acceptance |
+| --- | --- | --- |
+| `mpc-lgns.near` | `BMmVXWzUgcCavSAjrRSM13PVRLHSC7R3bVGLEAZNSXJb` | `2026-11-02T14:02:18Z` |
+| `multichain-mainnet-aurora.near` | `GXLyeCViNzF5EBp6fGRKeWUwmnC17pJNChcVY6uK3ERQ` | `2026-11-02T13:29:50Z` |
+| `near-mpc-staking4all-01.near` | `DBPVCKDJAWBgbet5yJN63pNNTdrahVhmjMYu4wEi3PQZ` | `2026-11-02T13:41:34Z` |
+| `nodemonster.near` | `8P38RCTrCvpCJGuym9WyLrMgYuY2z1T6QYsQTnHuUFBm` | `2026-11-02T13:28:47Z` |
+| `n1-multichain.near` | `8V4UzkQVmqjm2uBsi2Apv4SWmhZ3BT5fAeUm5wrPVxLa` | `2026-11-02T14:07:10Z` |
+| `everstake-mpc-1.near` | `CrtuyXL7xyU6LDUTnB1si3XSdi7xwSQpTNhGNdKK6353` | `2026-11-02T13:13:19Z` |
+| `stakin-mpc.near` | `3VFE5QJKPyDZTotW9cS56Wo5eDSXZasQM6EQ5iY6fApe` | `2026-11-02T14:00:25Z` |
+| `mpch-01.near` | `4FFxAuiPpriSPicnJ2oFQpjnSdtwkYkrH1KpdjMBw85d` | `2026-11-02T13:16:06Z` |
+| `svrn-01.near` | `DsxtNkhMo2SECDXusjvJtnotKHAgegAi83W1GfN6aggN` | `2026-11-02T14:02:10Z` |
+| `greenfield-mpc01.near` | `9hkZoV3gT48hNthSHFAidyJ35V65gGECG1aDUpLySVUF` | `2026-11-02T13:18:29Z` |
+| `natsai-mpc.near` | `7hDdqpMySphrejKr7YkMj7HYJ81Hhh1Q19rAXLMNuTus` | `2026-11-02T13:49:00Z` |
+| `hashkeympc.near` | `42xazEHVk46Fa9pR5Xb8N8EtTdwi8mecfc9uZj7CJMgE` | `2026-11-02T13:27:41Z` |
+| `astrostakers-mainnet.near` | `7akyH3xYPh86wxPeCu97Kqa8NomPKACPdDSgvHGZR3Pa` | `2026-11-02T13:57:26Z` |
+| `klever-nearmpc-01.near` | `CBzsazMftj2RzER1SypHEphqtfoym8QCuVqr9SKMG1Hr` | `2026-11-02T13:46:48Z` |
+| `nansen-ai-mpc.near` | `9oTDYiyHJ289j3LJ95ADxzMydLLC4hBYFBLWs1CyNAF` | `2026-11-02T13:39:28Z` |
+| `bitwise-mpc01.near` | `7CgQSwFJUfRkayXaBjS61n5gaKG8ywh2Shg1QRvSh67q` | `2026-11-02T13:18:17Z` |
+| `blacksandtech.near` | `G6hH5twjexy3uUuvTHL9UHCTNK41oLxEgk5Hq7cRtqJh` | `2026-11-02T13:41:11Z` |
 - `state()` at block `221156250`, hash `AyMFLkKj18uyBhK9cVCgqLPRnGknFzkJsPqgmAGzpXPu`, time `2026-10-22T23:03:03.749Z`, was read from `https://archival-rpc.mainnet.near.org`. That time is before `2026-10-23T00:00:00Z`. The keyset is epoch `14`. All 4 domain public keys match the epoch 14 keys in the current read. The participant accounts are the same 16. Resharing can keep the same public key. The same public key does not say that a share from before the TEE upgrade can take part in a current signature
 - `https://rpc.fastnear.com` did not return `state()` at block `210000000`. That node said the block is garbage collected
 

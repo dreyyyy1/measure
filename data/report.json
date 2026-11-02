@@ -9,9 +9,9 @@
   "participantCount": 16,
   "storedTeeAccounts": 17,
   "stateBlock": {
-    "height": 222724065,
-    "hash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy",
-    "timestampNs": "1793625556095016720"
+    "height": 222729388,
+    "hash": "8KaNc6DYGMuNmRkLsYFGmWfyd4ngFZNCTvjP7LU9pu4T",
+    "timestampNs": "1793628684544244735"
   },
   "summary": "Measure compares each Chain Signatures node's stored attestation with the OS measurement v1.signer publishes. get_attestation does not return quote bytes. When the indexer still has submit_participant_info, Measure reads the quote from that transaction.",
   "counts": {
@@ -67,43 +67,43 @@
   "calls": [
     {
       "method": "version",
-      "blockHeight": 222724064,
-      "blockHash": "C1r2cG4Kv1X9LXQBpyNgEoiWGyhg8SzrxNB8WJjMQmqr"
+      "blockHeight": 222729387,
+      "blockHash": "qdHcVHVSc8rhv2mi2Xjj2RLNpFTdDYzYD143Y1sguV9"
     },
     {
       "method": "config",
-      "blockHeight": 222724065,
-      "blockHash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy"
+      "blockHeight": 222729387,
+      "blockHash": "qdHcVHVSc8rhv2mi2Xjj2RLNpFTdDYzYD143Y1sguV9"
     },
     {
       "method": "state",
-      "blockHeight": 222724065,
-      "blockHash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy"
+      "blockHeight": 222729388,
+      "blockHash": "8KaNc6DYGMuNmRkLsYFGmWfyd4ngFZNCTvjP7LU9pu4T"
     },
     {
       "method": "allowed_os_measurements",
-      "blockHeight": 222724065,
-      "blockHash": "2HqxxLNy3KG6pV4Chfy4SUwGxMbU2EZG4uUqK4up2cCy"
+      "blockHeight": 222729388,
+      "blockHash": "8KaNc6DYGMuNmRkLsYFGmWfyd4ngFZNCTvjP7LU9pu4T"
     },
     {
       "method": "allowed_docker_image_hashes",
-      "blockHeight": 222724066,
-      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+      "blockHeight": 222729389,
+      "blockHash": "AF6XSLBrtHtu1TpxPs8T8XEs93MD239RaNR3uAtRAzit"
     },
     {
       "method": "allowed_launcher_compose_hashes",
-      "blockHeight": 222724066,
-      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+      "blockHeight": 222729389,
+      "blockHash": "AF6XSLBrtHtu1TpxPs8T8XEs93MD239RaNR3uAtRAzit"
     },
     {
       "method": "get_tee_accounts",
-      "blockHeight": 222724066,
-      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+      "blockHeight": 222729390,
+      "blockHash": "GsigerN65yCH75d1F3Joe8GSFbsFxVY637B3CU2xFL8"
     },
     {
       "method": "tee_verifier_account_id",
-      "blockHeight": 222724066,
-      "blockHash": "847XGhqjdZiXnmdfGxwUVfzLYzSiK5rxd1KghoD15iBz"
+      "blockHeight": 222729390,
+      "blockHash": "GsigerN65yCH75d1F3Joe8GSFbsFxVY637B3CU2xFL8"
     }
   ],
   "rows": [
@@ -125,8 +125,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
-        "expiryTimestampSeconds": 1794229338,
-        "acceptedAtSeconds": 1793624538
+        "expiryTimestampSeconds": 1794232938,
+        "acceptedAtSeconds": 1793628138
       },
       "image": {
         "status": "matches",
@@ -145,28 +145,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "13945015a45b384988f66f0bcf6b87bf5532956331d112392ce0dc1e27e21e42ebfda840108a71e780900807e09d7619"
       },
-      "submissionTx": "4awkkK3hptY52Q1cSHXSHQAbJGvAGj6drPoqJayFqWV3",
-      "attestationBlockHeight": 222724066,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628138
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628788
         }
-      }
+      },
+      "submissionTx": "BMmVXWzUgcCavSAjrRSM13PVRLHSC7R3bVGLEAZNSXJb",
+      "attestationBlockHeight": 222729391
     },
     {
       "accountId": "multichain-mainnet-aurora.near",
@@ -186,8 +186,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
-        "expiryTimestampSeconds": 1794227390,
-        "acceptedAtSeconds": 1793622590
+        "expiryTimestampSeconds": 1794230990,
+        "acceptedAtSeconds": 1793626190
       },
       "image": {
         "status": "matches",
@@ -206,28 +206,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "61e7ca6c34ab420994d8fd2c079892ca1c30926e0145d320b117c4b4c51f742793258f600817a4a957a975ddee0b39e6"
       },
-      "submissionTx": "5UJLW66RAiv3oGRRmrB4z5MZkTXUjapND9zRq3CKAwkp",
-      "attestationBlockHeight": 222724069,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793626190
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628795
         }
-      }
+      },
+      "submissionTx": "GXLyeCViNzF5EBp6fGRKeWUwmnC17pJNChcVY6uK3ERQ",
+      "attestationBlockHeight": 222729394
     },
     {
       "accountId": "near-mpc-staking4all-01.near",
@@ -247,8 +247,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
-        "expiryTimestampSeconds": 1794228093,
-        "acceptedAtSeconds": 1793623293
+        "expiryTimestampSeconds": 1794231694,
+        "acceptedAtSeconds": 1793626894
       },
       "image": {
         "status": "matches",
@@ -267,28 +267,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "497c980f4e7240b8ac071d99495b9775ca2aa93a5c6db21f7fb67126e1e5b5b88655e154345cefaa375977b2bb3fa83a"
       },
-      "submissionTx": "9YQcDcMfGKqx9Xwxsym1sv1QD9MZ6VUrXBxNs2T4HMBm",
-      "attestationBlockHeight": 222724067,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793626894
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628802
         }
-      }
+      },
+      "submissionTx": "DBPVCKDJAWBgbet5yJN63pNNTdrahVhmjMYu4wEi3PQZ",
+      "attestationBlockHeight": 222729392
     },
     {
       "accountId": "nodemonster.near",
@@ -308,8 +308,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "e165dc6727e029fb42c7af54e0c15c849df903302679b661db5ee492a8a949cf",
-        "expiryTimestampSeconds": 1794227327,
-        "acceptedAtSeconds": 1793622527
+        "expiryTimestampSeconds": 1794230927,
+        "acceptedAtSeconds": 1793626127
       },
       "image": {
         "status": "matches",
@@ -328,28 +328,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "dc27e00ca3d5db2c392adeac8d3eafa2546df51fdd3843614caa08622b38660598806b10fcbf17c5c57d34bcd657c0d3"
       },
-      "submissionTx": "AoBHRtmhtpCeUMP9b6qHGtj1Ed21NesWoK7tXgvm8yxY",
-      "attestationBlockHeight": 222724072,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793626127
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628809
         }
-      }
+      },
+      "submissionTx": "8P38RCTrCvpCJGuym9WyLrMgYuY2z1T6QYsQTnHuUFBm",
+      "attestationBlockHeight": 222729397
     },
     {
       "accountId": "n1-multichain.near",
@@ -369,8 +369,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "5676f96aef7b128f07acb69b05e2a80ad602c2c881ac719984f705dfce17f22f",
-        "expiryTimestampSeconds": 1794229631,
-        "acceptedAtSeconds": 1793624831
+        "expiryTimestampSeconds": 1794233230,
+        "acceptedAtSeconds": 1793628430
       },
       "image": {
         "status": "matches",
@@ -389,28 +389,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "58346915d8e56cc1f799448a6c896a80e84a5db43cbd2c201cf0bc0426c9c621e030d1bbe48684725355c696d39dfda5"
       },
-      "submissionTx": "AT7zL8a5Bo8Sf8agRXEyYhhtJYqBeZWGfesdKtwwVw1b",
-      "attestationBlockHeight": 222724072,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628430
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628817
         }
-      }
+      },
+      "submissionTx": "8V4UzkQVmqjm2uBsi2Apv4SWmhZ3BT5fAeUm5wrPVxLa",
+      "attestationBlockHeight": 222729396
     },
     {
       "accountId": "everstake-mpc-1.near",
@@ -450,28 +450,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "d139c87b8a379b21d3c13b7fa60d0168fdbb69c70d0667660537b871c81b5eb49b1159d5bd5ea87e62742961b9174b91"
       },
-      "submissionTx": "CtXL8pRWKV2buizdkz17UF2gUFckBvuPj7ShQMVaEvgp",
-      "attestationBlockHeight": 222724070,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793625199
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628824
         }
-      }
+      },
+      "submissionTx": "CrtuyXL7xyU6LDUTnB1si3XSdi7xwSQpTNhGNdKK6353",
+      "attestationBlockHeight": 222729395
     },
     {
       "accountId": "stakin-mpc.near",
@@ -491,8 +491,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
-        "expiryTimestampSeconds": 1794229225,
-        "acceptedAtSeconds": 1793624425
+        "expiryTimestampSeconds": 1794232825,
+        "acceptedAtSeconds": 1793628025
       },
       "image": {
         "status": "matches",
@@ -511,28 +511,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "13945015a45b384988f66f0bcf6b87bf5532956331d112392ce0dc1e27e21e42ebfda840108a71e780900807e09d7619"
       },
-      "submissionTx": "BmLnUL4m5b3DxSM2CGmcxy9mnreGJRBv8zWaz52PbbUb",
-      "attestationBlockHeight": 222724067,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628025
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628830
         }
-      }
+      },
+      "submissionTx": "3VFE5QJKPyDZTotW9cS56Wo5eDSXZasQM6EQ5iY6fApe",
+      "attestationBlockHeight": 222729391
     },
     {
       "accountId": "mpch-01.near",
@@ -572,28 +572,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "3a9d4024689cc6380c5780e4569b32773f8e78ff7319a32bb8291cde8f9c041091befcded04f8a0dcc94c74432e7f886"
       },
-      "submissionTx": "4FFxAuiPpriSPicnJ2oFQpjnSdtwkYkrH1KpdjMBw85d",
-      "attestationBlockHeight": 222724071,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793625366
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628836
         }
-      }
+      },
+      "submissionTx": "4FFxAuiPpriSPicnJ2oFQpjnSdtwkYkrH1KpdjMBw85d",
+      "attestationBlockHeight": 222729395
     },
     {
       "accountId": "svrn-01.near",
@@ -613,8 +613,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
-        "expiryTimestampSeconds": 1794229331,
-        "acceptedAtSeconds": 1793624531
+        "expiryTimestampSeconds": 1794232930,
+        "acceptedAtSeconds": 1793628130
       },
       "image": {
         "status": "matches",
@@ -633,8 +633,6 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "3a9d4024689cc6380c5780e4569b32773f8e78ff7319a32bb8291cde8f9c041091befcded04f8a0dcc94c74432e7f886"
       },
-      "submissionTx": "8kQuS5VeEg3aDJek7AG2F9QGRuu3Y4gqybZWGWRi9Vhi",
-      "attestationBlockHeight": 222724069,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
@@ -645,16 +643,18 @@
           "tcbStatus": "UpToDate",
           "advisoryIds": [],
           "reason": "verify() returned a report",
-          "checkedAtSeconds": 1793624531
+          "checkedAtSeconds": 1793628130
         },
         "now": {
           "status": "signature checked",
           "tcbStatus": "UpToDate",
           "advisoryIds": [],
           "reason": "verify() returned a report",
-          "checkedAtSeconds": 1793628122
+          "checkedAtSeconds": 1793628840
         }
-      }
+      },
+      "submissionTx": "DsxtNkhMo2SECDXusjvJtnotKHAgegAi83W1GfN6aggN",
+      "attestationBlockHeight": 222729394
     },
     {
       "accountId": "greenfield-mpc01.near",
@@ -694,28 +694,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "e33c71916561029a588f422d0a7d6bae1e7722d0db0f74e10eeb0bf8ec0b8a23535b798bc7d61048f3943cf88c10a880"
       },
-      "submissionTx": "9hkZoV3gT48hNthSHFAidyJ35V65gGECG1aDUpLySVUF",
-      "attestationBlockHeight": 222724072,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793625509
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628845
         }
-      }
+      },
+      "submissionTx": "9hkZoV3gT48hNthSHFAidyJ35V65gGECG1aDUpLySVUF",
+      "attestationBlockHeight": 222729397
     },
     {
       "accountId": "natsai-mpc.near",
@@ -735,8 +735,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "52ac6180435b47e17a0e99face12e2e54acbc73ad3297bda9e38f7706fe9d75e",
-        "expiryTimestampSeconds": 1794228540,
-        "acceptedAtSeconds": 1793623740
+        "expiryTimestampSeconds": 1794232140,
+        "acceptedAtSeconds": 1793627340
       },
       "image": {
         "status": "matches",
@@ -755,28 +755,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "99e2210e43c88c4e38c367bd8508d4ce8d48c2f17cbe31924ced515984ac1e3e51148cb66d005ea02ee1ab83c2860d53"
       },
-      "submissionTx": "8TYP8xkGhegYB3swiQXcL189g2AWoNEH3N2Edokn3kqC",
-      "attestationBlockHeight": 222724072,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793627340
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628850
         }
-      }
+      },
+      "submissionTx": "7hDdqpMySphrejKr7YkMj7HYJ81Hhh1Q19rAXLMNuTus",
+      "attestationBlockHeight": 222729398
     },
     {
       "accountId": "hashkeympc.near",
@@ -796,8 +796,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "16477fc809423efbabbdd69bbbd41942481819e3b89e5a8db036d8f72434ed16",
-        "expiryTimestampSeconds": 1794227261,
-        "acceptedAtSeconds": 1793622461
+        "expiryTimestampSeconds": 1794230861,
+        "acceptedAtSeconds": 1793626061
       },
       "image": {
         "status": "matches",
@@ -816,28 +816,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "457898c44c5b8055df94b6cf3454f618c1c348551a8db74f135c6fef1274deae0a355444552e8ffcbb74bd7085574ccd"
       },
-      "submissionTx": "9rWUux2T1wkGZhGYgdatmQj8A7Y8oM2ceue6GrDgwNhR",
-      "attestationBlockHeight": 222724071,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793626061
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628854
         }
-      }
+      },
+      "submissionTx": "42xazEHVk46Fa9pR5Xb8N8EtTdwi8mecfc9uZj7CJMgE",
+      "attestationBlockHeight": 222729396
     },
     {
       "accountId": "astrostakers-mainnet.near",
@@ -857,8 +857,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "2e70dd7670adcc9a837410719f397f560a78eb1b12e5bc042b9df73209359049",
-        "expiryTimestampSeconds": 1794229046,
-        "acceptedAtSeconds": 1793624246
+        "expiryTimestampSeconds": 1794232646,
+        "acceptedAtSeconds": 1793627846
       },
       "image": {
         "status": "matches",
@@ -877,28 +877,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "afab35aac134aaa25b2d87df60dc744970f6d44bb1d7c0fad878dcd9910feb61ba98fd1b59357e7bcbdb65bebe1c9233"
       },
-      "submissionTx": "4Ak3WV4vQ9LfHGh7HGZmuf8kEH6VLU7EagKnHp1LxWFN",
-      "attestationBlockHeight": 222724068,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793627846
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628858
         }
-      }
+      },
+      "submissionTx": "7akyH3xYPh86wxPeCu97Kqa8NomPKACPdDSgvHGZR3Pa",
+      "attestationBlockHeight": 222729393
     },
     {
       "accountId": "klever-nearmpc-01.near",
@@ -918,8 +918,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "2e70dd7670adcc9a837410719f397f560a78eb1b12e5bc042b9df73209359049",
-        "expiryTimestampSeconds": 1794228408,
-        "acceptedAtSeconds": 1793623608
+        "expiryTimestampSeconds": 1794232008,
+        "acceptedAtSeconds": 1793627208
       },
       "image": {
         "status": "matches",
@@ -938,28 +938,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "3b703b7a2b10a41adefc73466f81cb91ca582787bc927d516255d69608b0127ca2bb74e398b87079089368c96d5bed2b"
       },
-      "submissionTx": "BaaCyaaae8PFgGdxUVtBMLxhcpsY4GUEpbQwq3K4ZSnu",
-      "attestationBlockHeight": 222724068,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793627208
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628863
         }
-      }
+      },
+      "submissionTx": "CBzsazMftj2RzER1SypHEphqtfoym8QCuVqr9SKMG1Hr",
+      "attestationBlockHeight": 222729393
     },
     {
       "accountId": "nansen-ai-mpc.near",
@@ -979,8 +979,8 @@
         },
         "mpcImageHash": "536d528f19cff6a45f384fb225e8a331e5554b9da45196d0fae148d191e8b36d",
         "launcherComposeHash": "2e70dd7670adcc9a837410719f397f560a78eb1b12e5bc042b9df73209359049",
-        "expiryTimestampSeconds": 1794227969,
-        "acceptedAtSeconds": 1793623169
+        "expiryTimestampSeconds": 1794231568,
+        "acceptedAtSeconds": 1793626768
       },
       "image": {
         "status": "matches",
@@ -999,28 +999,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "3b703b7a2b10a41adefc73466f81cb91ca582787bc927d516255d69608b0127ca2bb74e398b87079089368c96d5bed2b"
       },
-      "submissionTx": "8aMfyn37RpNpJxSr5Uc8hy9ZRawPSqF6S7dh28M5DoXJ",
-      "attestationBlockHeight": 222724072,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793626768
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628866
         }
-      }
+      },
+      "submissionTx": "9oTDYiyHJ289j3LJ95ADxzMydLLC4hBYFBLWs1CyNAF",
+      "attestationBlockHeight": 222729398
     },
     {
       "accountId": "bitwise-mpc01.near",
@@ -1060,28 +1060,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "afab35aac134aaa25b2d87df60dc744970f6d44bb1d7c0fad878dcd9910feb61ba98fd1b59357e7bcbdb65bebe1c9233"
       },
-      "submissionTx": "7CgQSwFJUfRkayXaBjS61n5gaKG8ywh2Shg1QRvSh67q",
-      "attestationBlockHeight": 222724072,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793625497
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628870
         }
-      }
+      },
+      "submissionTx": "7CgQSwFJUfRkayXaBjS61n5gaKG8ywh2Shg1QRvSh67q",
+      "attestationBlockHeight": 222729398
     },
     {
       "accountId": "blacksandtech.near",
@@ -1101,8 +1101,8 @@
         },
         "mpcImageHash": "4572d8de226e20870d6961a1e0f364cd77817d4cf53fdba8001f56c75695089d",
         "launcherComposeHash": "f99d6a7958fd44ccf2569d9ad49da3b2e0248ca3364f36e8f2466d7bf2cf4444",
-        "expiryTimestampSeconds": 1794228072,
-        "acceptedAtSeconds": 1793623272
+        "expiryTimestampSeconds": 1794231671,
+        "acceptedAtSeconds": 1793626871
       },
       "image": {
         "status": "matches",
@@ -1121,37 +1121,28 @@
         "rtmr2": "9284cde236231d5ddace01104a440fd504df5182a2ad1ac3d2138b80c6a7864bd2c30f69041d8264217f3d24541580cf",
         "rtmr3": "ad73e11b1ca5739c5e3fa805a7ba7a15941e973856d54371a7a7f089f2c9ddd01d9e38b939f86db0166544802e7a44ba"
       },
-      "submissionTx": "dT8gv5fTnwPQQYe6C5BgC1hqEiT4MLTQCsFdnNw6FwM",
-      "attestationBlockHeight": 222724068,
       "signature": {
         "library": "@phala/dcap-qvl",
         "libraryVersion": "0.7.0",
-        "collateralSource": null,
-        "root": null,
+        "collateralSource": "on-chain collateral",
+        "root": "Intel production root",
         "acceptance": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793626871
         },
         "now": {
-          "status": "signature not checked",
-          "tcbStatus": null,
+          "status": "signature checked",
+          "tcbStatus": "UpToDate",
           "advisoryIds": [],
-          "reason": "this snapshot did not pass this quote and collateral to the Intel check",
-          "checkedAtSeconds": null
+          "reason": "verify() returned a report",
+          "checkedAtSeconds": 1793628876
         }
-      }
+      },
+      "submissionTx": "G6hH5twjexy3uUuvTHL9UHCTNK41oLxEgk5Hq7cRtqJh",
+      "attestationBlockHeight": 222729392
     }
-  ],
-  "intel": {
-    "library": "@phala/dcap-qvl",
-    "libraryVersion": "0.7.0",
-    "root": "Intel production root",
-    "collateralSource": "on-chain collateral",
-    "checkedRows": [
-      "svrn-01.near"
-    ]
-  }
+  ]
 }
